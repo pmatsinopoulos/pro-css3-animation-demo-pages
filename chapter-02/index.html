@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>CSS3 Transformation</title>
+
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="stylesheets/index.css" type="text/css">
+
+    <script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+
+    <!-- Latest compiled and minified JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js" integrity="sha384-0mSbJDEHialfmuBBQP6A4Qrprq5OVfW37PRR3j5ELqxss1yVqOtnepnHVP9aJ7xS" crossorigin="anonymous"></script>
+
+    <script src="javascripts/index.js" type="text/javascript"></script>
+  </head>
+  <body>
+    <div class="container">
+        <h2>Image rotated 45deg</h2>
+        <pre>
+img {
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform:         rotate(45deg);
+}
+        </pre>
+        <p>
+            <img id="rotate" src="images/puredogss.png" alt="Dogs" class="with-margins"> Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Suspendisse eu mi tellus. Vestibulum tortor erat, facilisis
+            in auctor semper, pharetra quis mi...</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <h2>Image rotated 45deg - The origin of transform (center of rotation) is on top right</h2>
+        <pre>
+img {
+    -moz-transform-origin:    right top;
+    -ms-transform-origin:     right top;
+    -o-transform-origin:      right top;
+    -webkit-transform-origin: right top;
+    transform-origin:         right top;
+
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform:         rotate(45deg);
+}
+        </pre>
+        <p>
+            <img id="rotate-transform-origin" src="images/puredogss.png" alt="Dogs" class="with-margins"> Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Suspendisse eu mi tellus. Vestibulum tortor erat, facilisis
+            in auctor semper, pharetra quis mi...</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <!-- Scale example and mirroring -->
+
+        <h2>Image Scaling and Mirroring Example</h2>
+        <pre>
+img {
+    -moz-transform:    scaleX(-1);
+    -ms-transform:     scaleX(-1);
+    -o-transform:      scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform:         scaleX(-1);
+}
+        </pre>
+        <p>
+            <img id="scaling-and-mirroring-left" src="images/lake.jpg" alt="Lake" class="no-border">
+            <img id="scaling-and-mirroring-right"  src="images/lake.jpg" alt="Lake Mirrored" class="with-margins no-border">Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Suspendisse eu mi tellus. Vestibulum tortor erat, facilisis
+            in auctor semper, pharetra quis mi...</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <!-- Translate Example -->
+
+        <h2>Translate 50px horizontally to the right and 4em vertically upwards</h2>
+        <pre>
+img {
+    -moz-transform:    translate(50px, -4em);
+    -ms-transform:     translate(50px, -4em);
+    -o-transform:      translate(50px, -4em);
+    -webkit-transform: translate(50px, -4em);
+    transform:         translate(50px, -4em);
+}
+        </pre>
+        <p>
+            <img id="translate" src="images/puredogss.png" alt="Dogs" class="with-margins"> Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Suspendisse eu mi tellus. Vestibulum tortor erat, facilisis
+            in auctor semper, pharetra quis mi...</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <!-- Skew Example -->
+
+        <h2>Skew horizontally 21deg</h2>
+        <pre>
+img {
+    -moz-transform:    skewX(21deg);
+    -ms-transform:     skewX(21deg);
+    -o-transform:      skewX(21deg);
+    -webkit-transform: skewX(21deg);
+    transform:         skewX(21deg);
+}
+        </pre>
+        <p>
+            <img id="skew" src="images/puredogss.png" alt="Dogs" class="with-margins"> Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Suspendisse eu mi tellus. Vestibulum tortor erat, facilisis
+            in auctor semper, pharetra quis mi...</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+        <!-- Translate and Rotate -->
+
+        <h2>Translate and rotate 50px horizontally to the right and 4em upwards, and then rotate 45degrees</h2>
+        <pre>
+img {
+    -moz-transform:    translate(50px, -4em) rotate(45deg);
+    -ms-transform:     translate(50px, -4em) rotate(45deg);
+    -o-transform:      translate(50px, -4em) rotate(45deg);
+    -webkit-transform: translate(50px, -4em) rotate(45deg);
+    transform:         translate(50px, -4em) rotate(45deg);
+}
+        </pre>
+        <p>
+            <img id="translate-and-rotate" src="images/puredogss.png" alt="Dogs" class="with-margins"> Lorem ipsum dolor sit
+            amet, consectetur adipiscing elit. Suspendisse eu mi tellus. Vestibulum tortor erat, facilisis
+            in auctor semper, pharetra quis mi...</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+        <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae
+            ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit
+            aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam
+            est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore
+            et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam,
+            nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae
+            consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p>
+
+    </div>
+  </body>
+</html>

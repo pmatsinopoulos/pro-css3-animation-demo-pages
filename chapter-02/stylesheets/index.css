@@ -1,0 +1,73 @@
+body {
+    margin-top: 10px;
+}
+
+img {
+    width: 300px;
+    height: 300px;
+    float: left;
+    border: 1px solid gray;
+}
+
+.with-margins {
+    margin: 0 2em 1.4em 0;
+}
+
+.no-border {
+    border: 0;
+}
+
+#rotate {
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform:         rotate(45deg);
+}
+
+#rotate-transform-origin {
+    -moz-transform-origin:    right top;
+    -ms-transform-origin:     right top;
+    -o-transform-origin:      right top;
+    -webkit-transform-origin: right top;
+    transform-origin:         right top;
+
+    -moz-transform:    rotate(45deg);
+    -ms-transform:     rotate(45deg);
+    -o-transform:      rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    transform:         rotate(45deg);
+}
+
+#scaling-and-mirroring-right {
+    -moz-transform:    scaleX(-1);
+    -ms-transform:     scaleX(-1);
+    -o-transform:      scaleX(-1);
+    -webkit-transform: scaleX(-1);
+    transform:         scaleX(-1);
+}
+
+#translate {
+    -moz-transform:    translate(50px, -4em);
+    -ms-transform:     translate(50px, -4em);
+    -o-transform:      translate(50px, -4em);
+    -webkit-transform: translate(50px, -4em);
+    transform:         translate(50px, -4em);
+}
+
+#skew {
+    -moz-transform:    skewX(21deg);
+    -ms-transform:     skewX(21deg);
+    -o-transform:      skewX(21deg);
+    -webkit-transform: skewX(21deg);
+    transform:         skewX(21deg);
+}
+
+#translate-and-rotate {
+    -moz-transform:    translate(50px, -4em) rotate(45deg);
+    -ms-transform:     translate(50px, -4em) rotate(45deg);
+    -o-transform:      translate(50px, -4em) rotate(45deg);
+    -webkit-transform: translate(50px, -4em) rotate(45deg);
+    transform:         translate(50px, -4em) rotate(45deg);
+}
+
